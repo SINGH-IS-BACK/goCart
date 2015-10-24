@@ -1,0 +1,581 @@
+New log file opened at Sat Oct 24 16:04:24 PDT 2015 by 72256@LM-BLR-00668778
+jvm 72256@LM-BLR-00668778
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/kthethi/Documents/test/goCart
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/kthethi/Documents/test/goCart/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/kthethi/Documents/test/goCart/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/kthethi/Documents/test/goCart/project, returning: (gocart-build)
+Loading project definition from /Users/kthethi/Documents/test/goCart/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5d5853cf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /Users/kthethi/Documents/test/goCart
+[Loading] Found non-root projects 
+[Loading] Done in /Users/kthethi/Documents/test/goCart, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/kthethi/Documents/test/goCart, returning: (gocart)
+Set current project to goCart (in build file:/Users/kthethi/Documents/test/goCart/)
+Reapplying settings...
+Set current project to goCart (in build file:/Users/kthethi/Documents/test/goCart/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/Users/kthethi/Documents/test/goCart/}gocart/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f8bb5ed, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 24 Oct, 2015 4:04:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/kthethi/Documents/test/goCart/}gocart/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@43826640, check cycles: false
+Total time: 0 s, completed 24 Oct, 2015 4:04:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/kthethi/Documents/test/goCart/}gocart/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@45a95def, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 24 Oct, 2015 4:04:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/kthethi/Documents/test/goCart/}gocart/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f5db51e, check cycles: false
+Total time: 0 s, completed 24 Oct, 2015 4:04:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@479aa713, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Total time: 0 s, completed 24 Oct, 2015 4:04:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 72256
+[info] play - Application started (Prod)
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@55936275, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Read from stdout: Compiling 3 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 3 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4be9647 directly...
+Read from stdout: /Users/kthethi/Documents/test/goCart/app/util/Utils.java:10: package dao does not exist
+/Users/kthethi/Documents/test/goCart/app/util/Utils.java:10: package dao does not exist
+Read from stdout: dao.MasterUserDAO
+dao.MasterUserDAO
+Read from stdout: /Users/kthethi/Documents/test/goCart/app/util/Utils.java:28: cannot find symbol
+Read from stdout: symbol:   variable MasterUserDAO
+Read from stdout: location: class util.Utils
+/Users/kthethi/Documents/test/goCart/app/util/Utils.java:28: cannot find symbol
+  symbol:   variable MasterUserDAO
+  location: class util.Utils
+Read from stdout: MasterUserDAO
+MasterUserDAO
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed 24 Oct, 2015 4:19:50 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@39607be6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Read from stdout: Compiling 4 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 4 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2cd15d30 directly...
+Read from stdout: /Users/kthethi/Documents/test/goCart/app/util/Utils.java:10: package dao does not exist
+/Users/kthethi/Documents/test/goCart/app/util/Utils.java:10: package dao does not exist
+Read from stdout: dao.MasterUserDAO
+dao.MasterUserDAO
+Read from stdout: /Users/kthethi/Documents/test/goCart/app/util/Utils.java:28: cannot find symbol
+Read from stdout: symbol:   variable MasterUserDAO
+Read from stdout: location: class util.Utils
+/Users/kthethi/Documents/test/goCart/app/util/Utils.java:28: cannot find symbol
+  symbol:   variable MasterUserDAO
+  location: class util.Utils
+Read from stdout: MasterUserDAO
+MasterUserDAO
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 0 s, completed 24 Oct, 2015 4:19:59 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c6f15f0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java, /Users/kthethi/Documents/test/goCart/app/util/Utils.java, /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java, /Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+
+Read from stdout: Compiling 4 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 4 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1f995c49 directly...
+Java compilation took 0.093842215 s
+Java analysis took 0.130280552 s
+Java compile + analysis took 0.22763368 s
+Invalidating /Users/kthethi/Documents/test/goCart/app/util/Config.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/app/util/Config.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/app/util/Config.java)
+The /Users/kthethi/Documents/test/goCart/app/util/Config.java source file has the following regular definitions changed:
+	notify, wait, getMongoPort, equals, getHost, getMongoHost, notifyAll, <init>, Config, getPort, toString, getClass, getMongoDB, getConfig, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/util/Config.java
+Invalidating /Users/kthethi/Documents/test/goCart/app/util/Utils.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/app/util/Utils.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/app/util/Utils.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/app/util/Utils.java)
+The /Users/kthethi/Documents/test/goCart/app/util/Utils.java source file has the following regular definitions changed:
+	notify, wait, safeDoubleFromJson, equals, safeStringFromJson, generateCode, generateBigCode, safeLongFromJson, notifyAll, <init>, toString, Utils, getClass, safeBooleanFromJson, checkJsonInput, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/util/Utils.java
+Invalidating /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java)
+The /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java source file has the following regular definitions changed:
+	enumerator, notify, FROM, movedPermanently, CONTENT_LANGUAGE, CREATED, temporaryRedirect, WARNING, CONTINUE, SET_COOKIE2, channel, CONTENT_TYPE, Results$Redirect, badRequest, wait, ACCESS_CONTROL_ALLOW_METHODS, USER_AGENT, ctx, HOST, CONTENT_MD5, request, BAD_REQUEST, MAX_FORWARDS, redirect, TRAILER, PROXY_AUTHENTICATE, AUTHORIZATION, CACHE_CONTROL, generateUnauthorizedRequest, NOT_IMPLEMENTED, equals, PAYMENT_REQUIRED, RETRY_AFTER, PRECONDITION_FAILED, CONFLICT, ACCEPT_CHARSET, onReady, VIA, context, REQUEST_TIMEOUT, MULTIPLE_CHOICES, generateOkTrue, notFound, MOVED_PERMANENTLY, TE, CONTENT_LOCATION, PARTIAL_CONTENT, ERROR_TAG, ETAG, LENGTH_REQUIRED, UNAUTHORIZED, UNSUPPORTED_MEDIA_TYPE, Results$AsyncResult, REFERER, REQUEST_ENTITY_TOO_LARGE, ORIGIN, ACCEPT_LANGUAGE, NOT_MODIFIED, as, Results$StringChunks, Results$Todo, HTTP_VERSION_NOT_SUPPORTED, ACCESS_CONTROL_ALLOW_ORIGIN, Results$Status, IF_RANGE, IF_UNMODIFIED_SINCE, SWITCHING_PROTOCOLS, TEMPORARY_REDIRECT, CONTENT_LENGTH, SET_COOKIE, notifyAll, AGE, BAD_GATEWAY, EXPECTATION_FAILED, CONNECTION, Results$ByteChunks, Results$Chunks$Out, BaseController, OK, ACCESS_CONTROL_ALLOW_HEADERS, found, unauthorized, response, FOUND, <init>, DATE, async, CONTENT_RANGE, TRANSFER_ENCODING, access$100, PROXY_AUTHORIZATION, GONE, ACCESS_CONTROL_ALLOW_CREDENTIALS, clearLang, NOT_ACCEPTABLE, getPromise, status, EXPECT, LOCATION, VARY, WWW_AUTHENTICATE, TODO, forbidden, access$000, ACCEPTED, NO_CONTENT, INTERNAL_SERVER_ERROR, onDisconnected, UPGRADE, NOT_FOUND, session, ACCEPT_ENCODING, EXPIRES, seeOther, REQUESTED_RANGE_NOT_SATISFIABLE, toString, generateBadRequest, wrappedResult, ACCEPT, changeLang, GATEWAY_TIMEOUT, SERVER, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_MAX_AGE, getWrappedSimpleResult, LAST_MODIFIED, ACCESS_CONTROL_EXPOSE_HEADERS, ACCESS_CONTROL_REQUEST_HEADERS, flash, internalServerError, ok, ALLOW, COOKIE, IF_MODIFIED_SINCE, getClass, generateInternalServer, CONTENT_TRANSFER_ENCODING, lang, NON_AUTHORITATIVE_INFORMATION, close, PRAGMA, IF_MATCH, disconnectedCallbacks, PROXY_AUTHENTICATION_REQUIRED, promise, RESET_CONTENT, SEE_OTHER, CONTENT_ENCODING, RANGE, getWrappedResult, USE_PROXY, Results$Chunks, transform, REQUEST_URI_TOO_LONG, writable, FORBIDDEN, METHOD_NOT_ALLOWED, write, IF_NONE_MATCH, ACCEPT_RANGES, noContent, SERVICE_UNAVAILABLE, index, created, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java
+Invalidating /Users/kthethi/Documents/test/goCart/app/util/Constants.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/app/util/Constants.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/app/util/Constants.java)
+The /Users/kthethi/Documents/test/goCart/app/util/Constants.java source file has the following regular definitions changed:
+	notify, wait, MONGO_DB_PROP, equals, Constants, MONGO_PORT_PROP, notifyAll, LARGECLUSTER_RADIUS, <init>, MONGO_HOST_PROP, PORT_PROP, HOST_PROP, toString, getClass, SMALLCLUSTER_RADIUS, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/util/Constants.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/util/Config.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed 24 Oct, 2015 4:20:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e4b2ce, check cycles: false
+Total time: 0 s, completed 24 Oct, 2015 4:20:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@358b9fa4, check cycles: false
+Exception in thread "sbt-bg-threads-1" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Total time: 0 s, completed 24 Oct, 2015 4:20:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 72256
+This application is already running (Or delete /Users/kthethi/Documents/test/goCart/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-2" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f4f7ec2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Total time: 0 s, completed 24 Oct, 2015 4:20:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 72256
+This application is already running (Or delete /Users/kthethi/Documents/test/goCart/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-4" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ddf20b1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Play server process ID is 72256
+This application is already running (Or delete /Users/kthethi/Documents/test/goCart/RUNNING_PID file).
+Total time: 0 s, completed 24 Oct, 2015 4:29:20 PM
+> server-post-command-cleanup
+Exception in thread "sbt-bg-threads-6" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@4ad2d711, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Total time: 0 s, completed 24 Oct, 2015 4:29:37 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 72256
+This application is already running (Or delete /Users/kthethi/Documents/test/goCart/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-8" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b53209f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Play server process ID is 72256
+Total time: 0 s, completed 24 Oct, 2015 4:30:23 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+Oops, cannot start the server.
+org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9000
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:171)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:168)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer.<init>(NettyServer.scala:168)
+	at play.core.server.NettyServer$.createServer(NettyServer.scala:279)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:316)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:311)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer$.main(NettyServer.scala:311)
+	at play.core.server.NettyServer.main(NettyServer.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
