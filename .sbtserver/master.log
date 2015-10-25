@@ -366,3 +366,1050 @@ Total time: 0 s, completed 24 Oct, 2015 7:25:01 PM
 Play server process ID is 73597
 [info] play - Application started (Prod)
 [info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@44a8d06a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 24 Oct, 2015 7:29:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@5517c07, check cycles: false
+Total time: 0 s, completed 24 Oct, 2015 7:29:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Exception in thread "sbt-bg-threads-1" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+> backgroundRun
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@679ae2b8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Total time: 0 s, completed 24 Oct, 2015 7:29:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+Play server process ID is 73597
+This application is already running (Or delete /Users/kthethi/Documents/test/goCart/RUNNING_PID file).
+Exception in thread "sbt-bg-threads-2" java.lang.RuntimeException: Nonzero exit code: -1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@31ecfe6c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 24 Oct, 2015 7:30:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@caba1fa, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/conf/application.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/application.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/dev.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/dev.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/prod.conf,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/prod.conf)
+	(/Users/kthethi/Documents/test/goCart/conf/routes,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/routes)
+Copy play resource mappings: 
+	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)
+Total time: 0 s, completed 24 Oct, 2015 7:30:01 PM
+> server-post-command-cleanup
+Play server process ID is 73597
+> server-handle-next-server-request
+[info] play - Application started (Prod)
+Oops, cannot start the server.
+org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:9000
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:171)
+	at play.core.server.NettyServer$$anonfun$10.apply(NettyServer.scala:168)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer.<init>(NettyServer.scala:168)
+	at play.core.server.NettyServer$.createServer(NettyServer.scala:279)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:316)
+	at play.core.server.NettyServer$$anonfun$main$3.apply(NettyServer.scala:311)
+	at scala.Option.map(Option.scala:145)
+	at play.core.server.NettyServer$.main(NettyServer.scala:311)
+	at play.core.server.NettyServer.main(NettyServer.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@57f28cc5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 516ee719, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 5 s, completed 24 Oct, 2015 7:30:36 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7250073b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 69e55a4d, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 24 Oct, 2015 7:31:14 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@352ac623, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 4d5a0985, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 24 Oct, 2015 7:32:03 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4741b7ad, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 7912597a, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 10 errors found
+10 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 24 Oct, 2015 7:32:44 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@49b00c22, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 6b395db3, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 10 errors found
+10 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 24 Oct, 2015 7:33:34 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a739f28, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 2b3a61e9, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:9: value getUser is not a member of object controllers.UserController
+Read from stdout: GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+GET	    /user:userId			    controllers.UserController.getUser(userId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+/Users/kthethi/Documents/test/goCart/conf/routes:10: value addList is not a member of object controllers.UserController
+Read from stdout: POST	/addlist					controllers.UserController.addList()
+POST	/addlist					controllers.UserController.addList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:14: object StoreAssociateController is not a member of package controllers
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:15: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+/Users/kthethi/Documents/test/goCart/conf/routes:16: object StoreAssociateController is not a member of package controllers
+Read from stdout: POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+Read from stdout: 10 errors found
+10 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 9 s, completed 24 Oct, 2015 7:34:02 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a1291a3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 74965056, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: value getUser is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:14: value getUser is not a member of object controllers.StoreAssociateController
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:14: value getUser is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:14: value getUser is not a member of object controllers.StoreAssociateController
+Read from stdout: GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+GET	    /agent:agentId			    controllers.StoreAssociateController.getUser(agentId: String)
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 4 s, completed 24 Oct, 2015 7:34:22 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@56a8a4b8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 3297a57, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 6 s, completed 24 Oct, 2015 7:35:03 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@99828ad, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 911cdfb, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 24 Oct, 2015 7:36:01 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7f5c8c13, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 2cfc279, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: /Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+/Users/kthethi/Documents/test/goCart/conf/routes:15: value verifyList is not a member of object controllers.StoreAssociateController
+Read from stdout: POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+POST	/verifylist				    controllers.StoreAssociateController.verifyList()
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 24 Oct, 2015 7:37:48 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ffab010, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+	modified: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java, /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 791ec55a, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Scala compilation took 7.970866403 s
+Attempting to call com.sun.tools.javac.api.JavacTool@2dfbad5c directly...
+Java compilation took 0.463143299 s
+Java analysis took 0.294922944 s
+Java compile + analysis took 0.76213928 s
+Invalidating /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+The /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, notifyAll, updateLocation, isInstanceOf, ReverseStoreAssociateController, <init>, ==, clone, getAgent, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java
+The following modified names cause invalidation of /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala: Set(<init>)
+Invalidating /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+The /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java source file has the following regular definitions changed:
+	StoreAssociateController.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java
+None of the modified names appears in /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java...
+Invalidating (transitively) by inheritance from /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java...
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+Invalidated by transitive inheritance dependency: Set(/Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java)
+The /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java source file has the following regular definitions changed:
+	enumerator, notify, FROM, movedPermanently, CONTENT_LANGUAGE, CREATED, temporaryRedirect, WARNING, CONTINUE, SET_COOKIE2, channel, CONTENT_TYPE, Results$Redirect, badRequest, wait, ACCESS_CONTROL_ALLOW_METHODS, USER_AGENT, ctx, HOST, CONTENT_MD5, request, BAD_REQUEST, MAX_FORWARDS, redirect, TRAILER, PROXY_AUTHENTICATE, AUTHORIZATION, CACHE_CONTROL, generateUnauthorizedRequest, NOT_IMPLEMENTED, equals, PAYMENT_REQUIRED, RETRY_AFTER, StoreAssociateController, PRECONDITION_FAILED, CONFLICT, ACCEPT_CHARSET, onReady, VIA, context, REQUEST_TIMEOUT, MULTIPLE_CHOICES, generateOkTrue, notFound, MOVED_PERMANENTLY, TE, CONTENT_LOCATION, PARTIAL_CONTENT, ETAG, LENGTH_REQUIRED, UNAUTHORIZED, UNSUPPORTED_MEDIA_TYPE, Results$AsyncResult, getMorphia, REFERER, REQUEST_ENTITY_TOO_LARGE, ORIGIN, ACCEPT_LANGUAGE, NOT_MODIFIED, as, Results$StringChunks, Results$Todo, HTTP_VERSION_NOT_SUPPORTED, ACCESS_CONTROL_ALLOW_ORIGIN, Results$Status, IF_RANGE, IF_UNMODIFIED_SINCE, SWITCHING_PROTOCOLS, TEMPORARY_REDIRECT, CONTENT_LENGTH, SET_COOKIE, notifyAll, AGE, BAD_GATEWAY, updateLocation, EXPECTATION_FAILED, CONNECTION, Results$ByteChunks, Results$Chunks$Out, OK, ACTIVITIES_TAG, ACCESS_CONTROL_ALLOW_HEADERS, found, unauthorized, response, FOUND, <init>, listVerifies, DATE, async, CONTENT_RANGE, TRANSFER_ENCODING, access$100, PROXY_AUTHORIZATION, GONE, ACCESS_CONTROL_ALLOW_CREDENTIALS, clearLang, NOT_ACCEPTABLE, getPromise, status, EXPECT, LOCATION, VARY, WWW_AUTHENTICATE, TODO, forbidden, access$000, ACCEPTED, NO_CONTENT, INTERNAL_SERVER_ERROR, onDisconnected, UPGRADE, NOT_FOUND, session, ACCEPT_ENCODING, EXPIRES, getAgent, seeOther, REQUESTED_RANGE_NOT_SATISFIABLE, toString, generateBadRequest, wrappedResult, ACCEPT, changeLang, GATEWAY_TIMEOUT, SERVER, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_MAX_AGE, getWrappedSimpleResult, LAST_MODIFIED, ACCESS_CONTROL_EXPOSE_HEADERS, ACCESS_CONTROL_REQUEST_HEADERS, flash, internalServerError, ok, ALLOW, COOKIE, IF_MODIFIED_SINCE, getClass, generateInternalServer, CONTENT_TRANSFER_ENCODING, lang, NON_AUTHORITATIVE_INFORMATION, close, PRAGMA, IF_MATCH, disconnectedCallbacks, PROXY_AUTHENTICATION_REQUIRED, promise, RESET_CONTENT, SEE_OTHER, CONTENT_ENCODING, RANGE, getWrappedResult, USE_PROXY, Results$Chunks, transform, REQUEST_URI_TOO_LONG, writable, FORBIDDEN, METHOD_NOT_ALLOWED, write, IF_NONE_MATCH, ACCEPT_RANGES, noContent, SERVICE_UNAVAILABLE, index, created, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala: Set(StoreAssociateController, updateLocation, <init>, getAgent, index)
+The following modified names cause invalidation of /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala: Set(StoreAssociateController, updateLocation, <init>, getAgent, index)
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/kthethi/Documents/test/goCart/app/controllers/StoreAssociateController.java
+New invalidations:
+	Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala)
+Initial set of included nodes: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala)
+Including /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala
+Including /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala
+Including /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java
+Including /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/index.template.scala by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala
+Including /Users/kthethi/Documents/test/goCart/app/controllers/BaseController.java by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Including /Users/kthethi/Documents/test/goCart/app/controllers/Application.java by /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/index.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/controllers/routes.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/views/html/main.template.scala)
+Read from stdout: Compiling 3 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 3 Scala sources and 1 Java source to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler 18901fee, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Scala compilation took 7.440521823 s
+Attempting to call com.sun.tools.javac.api.JavacTool@2dfbad5c directly...
+Java compilation took 0.204793847 s
+Java analysis took 0.077333916 s
+Java compile + analysis took 0.28708081 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 17 s, completed 24 Oct, 2015 7:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 3
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@b7b5af0, check cycles: false
+Total time: 0 s, completed 24 Oct, 2015 7:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@575fdaa9, check cycles: false
+Invalidating /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/controllers/StoreAssociateController.class: stamp changed from lastModified(1445740726000) to lastModified(1445740735000)
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/controllers/StoreAssociateController.class)
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala)
+	external source: Set()
+All initially invalidated sources: Set(/Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_reverseRouting.scala, /Users/kthethi/Documents/test/goCart/target/scala-2.10/src_managed/main/routes_routing.scala)
+
+Read from stdout: Compiling 2 Scala sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Compiling 2 Scala sources to /Users/kthethi/Documents/test/goCart/target/scala-2.10/classes...
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.10.3
+Other repositories:
+Default repositories:
+Running cached compiler b8b4438, interfacing (CompilerInterface) with Scala compiler version 2.10.3
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	-classpath
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar:/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar:/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar:/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar:/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar:/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar:/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar:/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar:/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar:/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar:/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar:/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar:/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar:/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar:/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar:/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar:/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar:/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar:/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar:/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar:/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar
+Exception in thread "sbt-bg-threads-4" java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.sys.package$.error(package.scala:27)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1943)
+	at scala.Option.foreach(Option.scala:236)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1943)
+	at sbt.package$.toError(package.scala:4)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:53)
+	at sbt.plugins.BackgroundRun$$$$7a35ad7c3e3c86b67367822c77d1e57$$$$onfun$apply$9.apply(BackgroundRunPlugin.scala:51)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

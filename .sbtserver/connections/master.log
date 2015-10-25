@@ -5,3 +5,15 @@ New client attempting to connect on port: 50496-50495
 This client on port 50496 has uuid 8b527d91-0b72-4437-89a0-7b1d91bb4d55 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
 Connected Clients: activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55
 Taking next connection to: 50495
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50495
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50495
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50495
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50495
