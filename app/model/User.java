@@ -19,6 +19,8 @@ public class User {
 	private long purchasingPower;
 	private Point currentLocation;
 	private Cart currentCart;
+	private String status;
+	private String level; //0 - VVIP
 	
 	public User(String name, int zip) {
 		super();

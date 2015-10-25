@@ -6854,4 +6854,111 @@ Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskLogEve
 Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: ValueChanged(AttributeKey[scala.collection.Seq[java.lang.String]]("discoveredMainClasses") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile),TaskSuccess(BuildValue(LazyValue(List(),scala.pickling.PicklerUnpickler$DelegatingPicklerUnpickler@1ce30307),List())))
 Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskLogEvent(2363,LogMessage(debug,Copy play resource mappings: 
 	(/Users/kthethi/Documents/test/goCart/public/images/favicon.png,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/images/favicon.png)
-	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart
+	(/Users/kthethi/Documents/test/goCart/public/javascripts/jquery-1.9.0.min.js,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/javascripts/jquery-1.9.0.min.js)
+	(/Users/kthethi/Documents/test/goCart/public/stylesheets/main.css,/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes/public/stylesheets/main.css)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2363,Some(AttributeKey[scala.collection.Seq[scala.Tuple2[java.io.File,java.io.File]]]("playCopyAssets") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart))),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2352,Some(AttributeKey[scala.collection.Seq[scala.Tuple2[java.io.File,java.io.File]]]("copyResources") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2351,Some(AttributeKey[scala.collection.Seq[scala.Tuple2[java.io.File,java.io.File]]]("copyResources") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2351,Some(AttributeKey[scala.collection.Seq[scala.Tuple2[java.io.File,java.io.File]]]("copyResources") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2350,Some(AttributeKey[scala.collection.Seq[java.io.File]]("products") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2350,Some(AttributeKey[scala.collection.Seq[java.io.File]]("products") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2348,None,true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2309,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2309,None,true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2307,Some(AttributeKey[scala.collection.Seq[sbt.Attributed[java.io.File]]]("exportedProducts") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2307,Some(AttributeKey[scala.collection.Seq[sbt.Attributed[java.io.File]]]("exportedProducts") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2259,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2259,None,true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2256,Some(AttributeKey[scala.collection.Seq[sbt.Attributed[java.io.File]]]("fullClasspath") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2256,Some(AttributeKey[scala.collection.Seq[sbt.Attributed[java.io.File]]]("fullClasspath") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2246,Some(AttributeKey[sbt.BackgroundJobHandle]("backgroundRun") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobStarted(24,BackgroundJobInfo(4,backgroundRun,AttributeKey[sbt.BackgroundJobHandle]("backgroundRun") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(info,Running play.core.server.NettyServer ))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2246,Some(AttributeKey[sbt.BackgroundJobHandle]("backgroundRun") in Scope(Build: file:/Users/kthethi/Documents/test/goCart/, , Project: ProjectReference(file:/Users/kthethi/Documents/test/goCart/,gocart), Config: compile)),true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(debug,Waiting for threads to exit or System.exit to be called.))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(debug,  Classpath:
+	/Users/kthethi/Documents/test/goCart/target/scala-2.10/classes
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.scala-lang/scala-library/2.10.3/jars/scala-library.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/jars/play-java-jdbc_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-jdbc_2.10/jars/play-jdbc_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.18.0-GA.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar
+	/Users/kthethi/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar
+	/Users/kthethi/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.2.jar
+	/Users/kthethi/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar
+	/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar
+	/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar
+	/Users/kthethi/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar
+	/Users/kthethi/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar
+	/Users/kthethi/.ivy2/cache/io.netty/netty/bundles/netty-3.7.1.Final.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.slf4j/slf4j-api/1.7.5/jars/slf4j-api.jar
+	/Users/kthethi/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar
+	/Users/kthethi/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar
+	/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar
+	/Users/kthethi/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.0.jar
+	/Users/kthethi/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar
+	/Users/kthethi/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar
+	/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar
+	/Users/kthethi/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.3.jar
+	/Users/kthethi/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar
+	/Users/kthethi/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar
+	/Users/kthethi/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar
+	/Users/kthethi/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar
+	/Users/kthethi/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/com.jolbox/bonecp/0.8.0.RELEASE/bundles/bonecp.jar
+	/Users/kthethi/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar
+	/Users/kthethi/.ivy2/cache/com.h2database/h2/jars/h2-1.3.172.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/tyrex/tyrex/1.0.1/jars/tyrex.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java_2.10/jars/play-java_2.10-2.2.6.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.yaml/snakeyaml/1.12/bundles/snakeyaml.jar
+	/Users/kthethi/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.1.Final.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/javax.validation/validation-api/1.1.0.Final/jars/validation-api.jar
+	/Users/kthethi/Downloads/activator-dist-1.3.6/repository/org.jboss.logging/jboss-logging/3.1.1.GA/jars/jboss-logging.jar
+	/Users/kthethi/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-0.8.0.jar
+	/Users/kthethi/.ivy2/cache/org.springframework/spring-context/jars/spring-context-3.2.3.RELEASE.jar
+	/Users/kthethi/.ivy2/cache/org.springframework/spring-core/jars/spring-core-3.2.3.RELEASE.jar
+	/Users/kthethi/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-3.2.3.RELEASE.jar
+	/Users/kthethi/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar
+	/Users/kthethi/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar
+	/Users/kthethi/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar
+	/Users/kthethi/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar
+	/Users/kthethi/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar
+	/Users/kthethi/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar
+	/Users/kthethi/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.6.jar
+	/Users/kthethi/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar
+	/Users/kthethi/.ivy2/cache/org.mongodb.morphia/morphia/jars/morphia-1.0.0-rc0.jar
+	/Users/kthethi/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.0.1.jar
+	/Users/kthethi/.ivy2/cache/com.thoughtworks.proxytoys/proxytoys/jars/proxytoys-1.0.jar))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2245,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(debug,Waiting for thread run-main-3 to terminate.))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2245,None,true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskStarted(24,2244,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: TaskFinished(24,2244,None,true,None)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogMessage(debug,cancel strategy finish enabled=false lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(24),backgroundRun,Set(LiveClient(activator 8b527d91-0b72-4437-89a0-7b1d91bb4d55)),sbt.server.WorkCancellationStatus$$anon$1@eee1883)))))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogSuccess(Total time: 7 s, completed 24 Oct, 2015 7:39:02 PM))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: ExecutionSuccess(24)
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogStdOut(Play server process ID is 73597))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogStdOut([info] play - Application started (Prod)))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: DetachedLogEvent(LogStdOut([info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(debug,	Thread run-main-3 exited.))
+Sending msg to client activator-8b527d91-0b72-4437-89a0-7b1d91bb4d55: BackgroundJobLogEvent(4,LogMessage(debug,Waiting for thread New I/O worker #14 to terminate.))
