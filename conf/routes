@@ -18,6 +18,8 @@ POST        /agent/updateLocation        controllers.StoreAssociateController.up
 #Product
 POST        /product                     controllers.ProductController.addProduct()
 POST        /product/:productId          controllers.ProductController.updateProductLocation(productId: String)
+GET         /product                     controllers.ProductController.getAllProducts()
+GET         /product/:xCord/:yCord       controllers.ProductController.getProductsAtLocation(xCord: Long, yCord: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file                controllers.Assets.at(path="/public", file)
