@@ -25,6 +25,13 @@ public class Cart {
 	private String type; //0 - self, 1 - agent
 	private boolean paid;
 	
+	public void Cart(){
+	    this.products = null;
+	    this.totalAmount = 0;
+	    this.type = "self";
+	    this.paid = false;
+	}
+	
 	public ObjectId getId() {
 		return id;
 	}

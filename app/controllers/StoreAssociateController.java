@@ -32,12 +32,13 @@ public class StoreAssociateController extends BaseController{
 	private static final String ACTIVITIES_TAG = "activities";
 
 	public static Result getAgent(String agentId){
-		   
-		//user.setMobileNumber(mobileNumber);
-		return generateOkTrue();
-	}
-
-
+		Datastore datastore = getDataStore();
+        StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
+        ObjectNode result = Json.newObject();
+        result.put("agent", storeAssociate.toJson());
+        return ok(result);
+    }
+	
 	public static Result listVerifies(){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
@@ -45,9 +46,21 @@ public class StoreAssociateController extends BaseController{
 		}
 		JsonNode jsonReq = request().body().asJson();
 		String userId = jsonReq.get("userId").asText();
-		   
+	
+	    Datastore datastore = getDataStore();
+        User user = datastore.get(User.class, new ObjectId(userId));
+        Cart currentCart = user.getCurrentCart();
+        List<Cart> purchaseHistory = user.getPurchaseHistory();
+        purchaseHistory.add(currentCart);
+        user.setPurchaseHistory(purchaseHistory);
+        user.setCurrentCart(new Cart());
+        datastore.save(user);
+	   
 		//user.setMobileNumber(mobileNumber);
-		return generateOkTrue();
+	    ObjectNode result = Json.newObject();
+        result.put("user", user.toJson());
+        return ok(result);
+	    
 	}
 	
 	public static Result updateLocation(){

@@ -13,3 +13,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+.sbtserver
+project/.sbtserver
+.sbtserver/connections
+
