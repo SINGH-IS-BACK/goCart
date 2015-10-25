@@ -39,7 +39,7 @@ public class StoreAssociateController extends BaseController{
         return ok(result);
     }
 	
-	public static Result listVerifies(){
+	public static Result verifyList(){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
 	    	return generateBadRequest("Bad input json" + request().body());

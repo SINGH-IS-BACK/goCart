@@ -12,8 +12,8 @@ POST	/user/updateLocation		controllers.UserController.updateLocation()
 POST    /pay                        controllers.UserController.pay()
 
 #Agent
-GET         /agent:agentId               controllers.StoreAssociateController.getAgent(agentId: String)
-#POST	    /verifylist				    controllers.StoreAssociateController.verifyList()
+GET         /agent/:agentId               controllers.StoreAssociateController.getAgent(agentId: String)
+POST	    /verifylist				    controllers.StoreAssociateController.verifyList()
 POST        /agent/updateLocation        controllers.StoreAssociateController.updateLocation()
 
 #Product
