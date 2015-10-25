@@ -29,8 +29,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class StoreAssociateController extends BaseController{
 
-	private static final String ACTIVITIES_TAG = "activities";
-
 	public static Result getAgent(String agentId){
 		Datastore datastore = getDataStore();
         StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
@@ -69,12 +67,11 @@ public class StoreAssociateController extends BaseController{
 		JsonNode jsonReq = request().body().asJson();
 		Datastore datastore = getDataStore();
         String agentId = Utils.safeStringFromJson(jsonReq, "agentId");
-        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
-        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
-        Point storeAssociateLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+        long x = Utils.safeLongFromJson(jsonReq, "x");
+        long y = Utils.safeLongFromJson(jsonReq, "y");
 
         StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
-        storeAssociate.setCurrentLocation(storeAssociateLocation);
+        storeAssociate.setCurrentLocation(new double[]{x,y});
         datastore.save(storeAssociate);
 
         ObjectNode result = Json.newObject();

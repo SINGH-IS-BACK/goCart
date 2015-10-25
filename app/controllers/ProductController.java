@@ -19,7 +19,6 @@ import java.util.List;
  */
 public class ProductController extends BaseController{
 
-
     public static Result addProduct(){
         if(!Utils.checkJsonInput(request())){
             Logger.info("Bad request data to add product" + request().body());

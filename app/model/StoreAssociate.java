@@ -21,7 +21,7 @@ public class StoreAssociate {
     private ObjectId id;
 	
 	private String name;
-	private Point currentLocation;
+	private double[] currentLocation;
 	private List<User> queuedUsers;
 	private int level;
 	
@@ -33,7 +33,6 @@ public class StoreAssociate {
 		this.id = id;
 	}
 
-	
 	public String getName() {
 		return name;
 	}
@@ -42,11 +41,11 @@ public class StoreAssociate {
 		this.name = name;
 	}
 
-	public Point getCurrentLocation() {
+	public double[] getCurrentLocation() {
 		return currentLocation;
 	}
 
-	public void setCurrentLocation(Point currentLocation) {
+	public void setCurrentLocation(double[] currentLocation) {
 		this.currentLocation = currentLocation;
 	}
 
@@ -92,8 +91,8 @@ public class StoreAssociate {
 			userArr.add(user.toJsonForAgent());
 		}
 	   result.put("users", userArr);
-       result.put("locLat", getCurrentLocation().getLatitude());
-       result.put("locLon", getCurrentLocation().getLongitude());
+       result.put("x", getCurrentLocation()[0]);
+       result.put("y", getCurrentLocation()[1]);
        result.put("level", getLevel());
        return result;
    }
