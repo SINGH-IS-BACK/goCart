@@ -6,8 +6,10 @@ import java.util.List;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.Indexed;
 import org.mongodb.morphia.geo.Point;
 import com.fasterxml.jackson.databind.JsonNode;
+import org.mongodb.morphia.utils.IndexDirection;
 import play.libs.Json;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
@@ -21,8 +23,11 @@ public class StoreAssociate {
     private ObjectId id;
 	
 	private String name;
+
+    @Indexed(IndexDirection.GEO2D)
 	private double[] currentLocation;
-	private List<User> queuedUsers;
+
+    private List<User> queuedUsers;
 	private int level;
 	
 	public ObjectId getId() {

@@ -40,7 +40,7 @@ public class StoreAssociateController extends BaseController{
         return ok(result);
     }
 	
-	public static Result verifyList(){
+	public static Result verifyList(String agentId){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
 	    	return generateBadRequest("Bad input json" + request().body());
@@ -53,16 +53,32 @@ public class StoreAssociateController extends BaseController{
         if(user == null){
             return generateBadRequest("User not found");
         }
+
+        StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
+        if(storeAssociate == null){
+            return generateBadRequest("Store associate not found");
+        }
+
+        //update user cart
         Cart currentCart = user.getCurrentCart();
         user.addToPurchaseHistory(currentCart);
         user.setCurrentCart(new Cart());
         datastore.save(user);
-	   
-		//user.setMobileNumber(mobileNumber);
-	    ObjectNode result = Json.newObject();
-        result.put("user", user.toJson());
+
+        //update agent queue
+        List<User> newList = new ArrayList<>();
+        List<User> oldList = storeAssociate.getQueuedUsers();
+	    for(User u : oldList){
+            if(!u.getId().toString().equalsIgnoreCase(user.getId().toString())){
+                newList.add(u);
+            }
+        }
+
+        storeAssociate.setQueuedUsers(newList);
+        getDataStore().save(storeAssociate);
+        ObjectNode result = Json.newObject();
+        result.put("agent", storeAssociate.toJson());
         return ok(result);
-	    
 	}
 	
 	public static Result updateLocation(String agentId){

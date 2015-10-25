@@ -165,6 +165,8 @@ public class User {
         result.put("status", getStatus());
         result.put("level", getLevel());
         result.put("segment", getSegment());
+        result.put("frequency", 5);
+        result.put("purchasePower", 2000);
         return result;
     }
 }

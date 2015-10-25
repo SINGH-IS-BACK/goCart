@@ -8,6 +8,7 @@ import com.simplify.payments.domain.Invoice;
 import com.simplify.payments.domain.Payment;
 import model.Cart;
 import model.Product;
+import model.StoreAssociate;
 import model.User;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
@@ -16,6 +17,8 @@ import play.libs.Json;
 import play.mvc.Result;
 import util.Config;
 import util.Utils;
+
+import java.util.List;
 
 public class UserController extends BaseController {
 
@@ -77,7 +80,36 @@ public class UserController extends BaseController {
             user.getCurrentCart().addToCart(product, quantity);
         }
         datastore.save(user);
-        return generateOkTrue();
+
+        List<StoreAssociate> agents = getDataStore().find(StoreAssociate.class).field("currentLocation").near(
+                user.getCurrentLocation()[0],
+                user.getCurrentLocation()[1],
+                1000).asList();
+
+        int leastBusyc = Integer.MAX_VALUE;
+        StoreAssociate leastBusy = null;
+        for(int i = 0; i < agents.size(); i++){
+            StoreAssociate agent = agents.get(i);
+            if(agent.getQueuedUsers().size() == 0){
+                leastBusy = agent;
+                break;
+            }
+            if(agent.getQueuedUsers().size() < leastBusyc){
+                leastBusyc = agent.getQueuedUsers().size();
+                leastBusy = agent;
+            }
+        }
+
+        if(leastBusy == null){
+            List<StoreAssociate> agentsAll = getDataStore().find(StoreAssociate.class).asList();
+            leastBusy = agentsAll.get(0);
+        }
+
+        leastBusy.getQueuedUsers().add(user);
+        getDataStore().save(leastBusy);
+        ObjectNode result = Json.newObject();
+        result.put("agent", leastBusy.toJson());
+        return ok(result);
     }
 
     public static Result updateLocation(String userId) {
