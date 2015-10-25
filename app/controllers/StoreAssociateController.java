@@ -1,18 +1,12 @@
 package controllers;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import model.StoreAssociate;
 import play.Logger;
 import play.libs.Json;
 import play.mvc.Result;
 import util.Utils;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class StoreAssociateController extends BaseController{
 
@@ -48,5 +42,22 @@ public class StoreAssociateController extends BaseController{
 	       
 		return generateOkTrue();
 	}
-	
+
+    public static Result addAssociate(){
+
+        if(!Utils.checkJsonInput(request())){
+            Logger.info("Bad request data to add associate" + request().body());
+            return generateBadRequest("Bad input json");
+        }
+
+        JsonNode jsonReq = request().body().asJson();
+        String associateName = Utils.safeStringFromJson(jsonReq, "name");
+        int associateRank = Utils.safeIntFromJson(jsonReq, "rank", 2);
+        StoreAssociate assoc = new StoreAssociate(associateName, associateRank);
+        getDataStore().save(assoc);
+
+        ObjectNode result = Json.newObject();
+        //result.put("merchant", assoc.toJson());
+        return ok("");
+    }
 }

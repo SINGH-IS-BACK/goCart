@@ -26,6 +26,18 @@ public class User {
 	private String level; //0 - VVIP
 	private String segment; //male/ female/ age combination
 	
+	public User(String name, int zip, List<Cart> purchaseHistory, long purchasingPower, Point currentLocation, String status, String level, String segment) {
+		super();
+		this.name = name;
+		this.zip = zip;
+		this.purchaseHistory = purchaseHistory;
+		this.purchasingPower = purchasingPower;
+		this.currentLocation = currentLocation;
+		this.status = status;
+		this.level = level;
+		this.segment = segment;
+	}
+	
 	public ObjectId getId() {
 		return id;
 	}
@@ -119,6 +131,9 @@ public class User {
        result.put("zip", getZip());
        result.put("locLat", getCurrentLocation().getLatitude());
        result.put("locLon", getCurrentLocation().getLongitude());
+       result.put("status", getStatus());
+       result.put("level", getLevel());
+       result.put("segment", getSegment());
        return result;
    }
 }

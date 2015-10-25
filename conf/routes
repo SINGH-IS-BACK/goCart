@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET         /                            controllers.Application.index()
 
 #User
 GET	    /user:userId			    controllers.UserController.getUser(userId: String)
@@ -12,13 +12,15 @@ POST	/user/updateLocation		controllers.UserController.updateLocation()
 POST    /pay                        controllers.UserController.pay()
 
 #Agent
-GET	    /agent:agentId			    controllers.StoreAssociateController.getAgent(agentId: String)
-#POST	/verifylist				    controllers.StoreAssociateController.verifyList()
-POST	/agent/updateLocation		controllers.StoreAssociateController.updateLocation()
+GET         /agent:agentId               controllers.StoreAssociateController.getAgent(agentId: String)
+#POST	    /verifylist				    controllers.StoreAssociateController.verifyList()
+POST        /agent/updateLocation        controllers.StoreAssociateController.updateLocation()
 
+#Product
+POST        /product                     controllers.ProductController.addProduct()
+POST        /product/:productId          controllers.ProductController.updateProductLocation(productId: String)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET         /assets/*file                controllers.Assets.at(path="/public", file)
 
-
-GET     /test                   	controllers.TestController.addToDb()
+GET         /test                        controllers.TestController.addToDb()
