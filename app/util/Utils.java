@@ -20,17 +20,6 @@ public class Utils {
 		SecureRandom random = new SecureRandom();
 		return new BigInteger(30, random).toString(32);
 	}
-/*
-	public static boolean checkCredentials(Request req){
-		try{
-			String consumerKey = req.getHeader("API-Key");
-			String accessToken = req.getHeader("API-Token");
-			String expectedAccessToken = MasterUserDAO.getInstance().findKey(consumerKey);
-			return accessToken.equals(expectedAccessToken);
-		}catch(Exception e){
-			return false;
-		}
-	}*/
 	
 	public static boolean checkJsonInput(Request req){
 		try{
