@@ -41,10 +41,7 @@ public class UserController extends BaseController {
 
         User user = new User(name, email, zip, purchasingPower, new double[]{x, y}, status, level, segment);
         getDataStore().save(user);
-
-        ObjectNode result = Json.newObject();
-        result.put("data", user.toJson());
-        return ok(result);
+        return ok(user.toJson());
     }
 
     public static Result getUser(String userId) {
@@ -53,9 +50,7 @@ public class UserController extends BaseController {
         if (user == null) {
             return generateBadRequest("User not found");
         }
-        ObjectNode result = Json.newObject();
-        result.put("data", user.toJson());
-        return ok(result);
+        return ok(user.toJson());
     }
 
     public static Result addCart(String userId) {
@@ -128,9 +123,7 @@ public class UserController extends BaseController {
         user.setCurrentLocation(new double[]{x, y});
         datastore.save(user);
 
-        ObjectNode result = Json.newObject();
-        result.put("user", user.toJson());
-        return ok(result);
+        return ok(user.toJson());
     }
 
     public static Result pay(String userId) {
