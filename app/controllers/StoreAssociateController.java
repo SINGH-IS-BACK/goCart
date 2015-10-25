@@ -32,6 +32,9 @@ public class StoreAssociateController extends BaseController{
 	public static Result getAgent(String agentId){
 		Datastore datastore = getDataStore();
         StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
+        if(storeAssociate == null){
+            return generateBadRequest("Store associate not found");
+        }
         ObjectNode result = Json.newObject();
         result.put("agent", storeAssociate.toJson());
         return ok(result);
@@ -47,6 +50,9 @@ public class StoreAssociateController extends BaseController{
 	
 	    Datastore datastore = getDataStore();
         User user = datastore.get(User.class, new ObjectId(userId));
+        if(user == null){
+            return generateBadRequest("User not found");
+        }
         Cart currentCart = user.getCurrentCart();
         user.addToPurchaseHistory(currentCart);
         user.setCurrentCart(new Cart());
@@ -59,18 +65,20 @@ public class StoreAssociateController extends BaseController{
 	    
 	}
 	
-	public static Result updateLocation(){
+	public static Result updateLocation(String agentId){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
 		Datastore datastore = getDataStore();
-        String agentId = Utils.safeStringFromJson(jsonReq, "agentId");
         long x = Utils.safeLongFromJson(jsonReq, "x");
         long y = Utils.safeLongFromJson(jsonReq, "y");
 
         StoreAssociate storeAssociate = datastore.get(StoreAssociate.class, new ObjectId(agentId));
+        if(storeAssociate == null){
+            return generateBadRequest("Store associate not found");
+        }
         storeAssociate.setCurrentLocation(new double[]{x,y});
         datastore.save(storeAssociate);
 
