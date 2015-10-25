@@ -1,14 +1,5 @@
 package controllers;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import model.StoreAssociate;
-import model.User;
-import play.Logger;
-import play.libs.Json;
-import play.mvc.Result;
-import util.Utils;
-
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -23,25 +14,26 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
-public class StoreAssociateController extends BaseController{
+public class UserController extends BaseController{
 
 	private static final String ACTIVITIES_TAG = "activities";
 
-	public static Result getAgent(String agentId){
+	public static Result getUser(String userId){
 		   
 		//user.setMobileNumber(mobileNumber);
 		return generateOkTrue();
 	}
 
 
-	public static Result listVerifies(){
+	public static Result addList(){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
 		String userId = jsonReq.get("userId").asText();
-		   
+		String list = jsonReq.get("list").asText();
+	       
 		//user.setMobileNumber(mobileNumber);
 		return generateOkTrue();
 	}
@@ -52,27 +44,11 @@ public class StoreAssociateController extends BaseController{
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
-		String agentId = jsonReq.get("agentId").asText();
+		String userId = jsonReq.get("userId").asText();
 		String location = jsonReq.get("location").asText();
 	       
+		//user.setMobileNumber(mobileNumber);
 		return generateOkTrue();
 	}
-
-    public static Result addAssociate(){
-
-        if(!Utils.checkJsonInput(request())){
-            Logger.info("Bad request data to add associate" + request().body());
-            return generateBadRequest("Bad input json");
-        }
-
-        JsonNode jsonReq = request().body().asJson();
-        String associateName = Utils.safeStringFromJson(jsonReq, "name");
-        int associateRank = Utils.safeIntFromJson(jsonReq, "rank", 2);
-        StoreAssociate assoc = new StoreAssociate(associateName, associateRank);
-        getDataStore().save(assoc);
-
-        ObjectNode result = Json.newObject();
-        //result.put("merchant", assoc.toJson());
-        return ok("");
-    }
+	
 }

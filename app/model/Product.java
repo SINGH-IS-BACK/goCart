@@ -17,6 +17,7 @@ public class Product {
 	private String sku;
 	private long price;
 	private Point location;
+	private String imageUrl;
 	
 	public Product(String name, String brand, String type, String sku, long price, Point location) {
 		super();
