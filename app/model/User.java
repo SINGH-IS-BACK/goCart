@@ -8,6 +8,9 @@ import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.geo.Point;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @Entity("Users")
@@ -136,11 +139,29 @@ public class User {
         getPurchaseHistory().add(cart);
     }
 
+    public JsonNode toJsonForAgent(){
+       ObjectNode result = Json.newObject();
+       result.put("id", getId().toString());
+       result.put("name", getName());
+       result.put("zip", getZip());
+       result.put("locLat", getCurrentLocation().getLatitude());
+       result.put("locLon", getCurrentLocation().getLongitude());
+       result.put("status", getStatus());
+       result.put("level", getLevel());
+       result.put("segment", getSegment());
+       return result;
+    }
+
 	public JsonNode toJson(){
        ObjectNode result = Json.newObject();
        result.put("id", getId().toString());
        result.put("name", getName());
        result.put("zip", getZip());
+       ArrayNode cartArr = new ArrayNode(JsonNodeFactory.instance);
+		for(Cart cart : getPurchaseHistory()){
+			cartArr.add(cart.toJson());
+		}
+	    result.put("purchaseHistory", cartArr);
        result.put("locLat", getCurrentLocation().getLatitude());
        result.put("locLon", getCurrentLocation().getLongitude());
        result.put("status", getStatus());

@@ -5,9 +5,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
-import org.mongodb.morphia.annotations.Indexed;
 import org.mongodb.morphia.geo.Point;
-import org.mongodb.morphia.utils.IndexDirection;
 import play.libs.Json;
 
 @Entity("Products")
@@ -21,16 +19,14 @@ public class Product {
 	private String type;
 	private String sku;
 	private long price;
-    private String imageUrl;
-
-    @Indexed(IndexDirection.GEO2D)
-	private double[] location;
+	private Point location;
+	private String imageUrl;
 
     public Product(){
 
     }
 
-	public Product(String name, String brand, String type, String sku, long price, double[] location) {
+	public Product(String name, String brand, String type, String sku, long price, Point location) {
 		super();
 		this.name = name;
 		this.brand = brand;
@@ -47,8 +43,8 @@ public class Product {
         result.put("type", getType());
         result.put("sku", getSku());
         result.put("price", getPrice());
-        result.put("x", getLocation()[0]);
-        result.put("y", getLocation()[1]);
+        result.put("locLat", getLocation().getLatitude());
+        result.put("locLon", getLocation().getLongitude());
         return result;
     }
 
@@ -100,11 +96,11 @@ public class Product {
         this.price = price;
     }
 
-    public double[] getLocation() {
+    public Point getLocation() {
         return location;
     }
 
-    public void setLocation(double[] location) {
+    public void setLocation(Point location) {
         this.location = location;
     }
 

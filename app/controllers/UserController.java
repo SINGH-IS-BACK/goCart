@@ -76,13 +76,18 @@ public class UserController extends BaseController{
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
-		String userId = jsonReq.get("userId").asText();
-		String list = jsonReq.get("list").asText();
+		String userId = Utils.safeStringFromJson(jsonReq, "userId");
+        String list = jsonReq.get("list").asText();
 		
 		//add List<products>, amount, type)
 		//return agent
 	       
-		return generateOkTrue();
+	    Datastore datastore = getDataStore();
+        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
+        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
+        Point productLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+
+        return generateOkTrue();
 	}
 	
 	public static Result updateLocation(){
@@ -91,10 +96,19 @@ public class UserController extends BaseController{
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
-		String userId = jsonReq.get("userId").asText();
-		String location = jsonReq.get("location").asText();
-	    //update location in DB
-		return generateOkTrue();
+		Datastore datastore = getDataStore();
+        String userId = Utils.safeStringFromJson(jsonReq, "userId");
+        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
+        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
+        Point userLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+
+        User user = datastore.get(User.class, new ObjectId(userId));
+        user.setCurrentLocation(userLocation);
+        datastore.save(user);
+
+        ObjectNode result = Json.newObject();
+        result.put("user", user.toJson());
+        return ok(result);
 	}
 	
 	public static Result pay(){
