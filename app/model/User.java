@@ -6,6 +6,9 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.geo.Point;
+import com.fasterxml.jackson.databind.JsonNode;
+import play.libs.Json;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @Entity("Users")
 public class User {
@@ -21,10 +24,101 @@ public class User {
 	private Cart currentCart;
 	private String status;
 	private String level; //0 - VVIP
+	private String segment; //male/ female/ age combination
 	
+	public ObjectId getId() {
+		return id;
+	}
+
+	public void setId(ObjectId id) {
+		this.id = id;
+	}
+
 	public User(String name, int zip) {
 		super();
 		this.name = name;
 		this.zip = zip;
 	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getZip() {
+		return zip;
+	}
+
+	public void setZip(int zip) {
+		this.zip = zip;
+	}
+
+	public List<Cart> getPurchaseHistory() {
+		return purchaseHistory;
+	}
+
+	public void setPurchaseHistory(List<Cart> purchaseHistory) {
+		this.purchaseHistory = purchaseHistory;
+	}
+
+	public long getPurchasingPower() {
+		return purchasingPower;
+	}
+
+	public void setPurchasingPower(long purchasingPower) {
+		this.purchasingPower = purchasingPower;
+	}
+
+	public Point getCurrentLocation() {
+		return currentLocation;
+	}
+
+	public void setCurrentLocation(Point currentLocation) {
+		this.currentLocation = currentLocation;
+	}
+
+	public Cart getCurrentCart() {
+		return currentCart;
+	}
+
+	public void setCurrentCart(Cart currentCart) {
+		this.currentCart = currentCart;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	public String getSegment() {
+		return segment;
+	}
+
+	public void setSegment(String segment) {
+		this.segment = segment;
+	}
+
+	public JsonNode toJson(){
+       ObjectNode result = Json.newObject();
+       result.put("id", getId().toString());
+       result.put("name", getName());
+       result.put("zip", getZip());
+       result.put("locLat", getCurrentLocation().getLatitude());
+       result.put("locLon", getCurrentLocation().getLongitude());
+       return result;
+   }
 }

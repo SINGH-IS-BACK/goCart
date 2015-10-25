@@ -7,8 +7,9 @@ GET     /                           controllers.Application.index()
 
 #User
 GET	    /user:userId			    controllers.UserController.getUser(userId: String)
-POST	/addlist					controllers.UserController.addList()
+POST	/addCart					controllers.UserController.addCart()
 POST	/user/updateLocation		controllers.UserController.updateLocation()
+POST    /pay                        controllers.UserController.pay()
 
 #Agent
 GET	    /agent:agentId			    controllers.StoreAssociateController.getAgent(agentId: String)
