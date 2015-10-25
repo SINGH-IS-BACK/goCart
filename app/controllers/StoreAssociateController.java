@@ -106,7 +106,7 @@ public class StoreAssociateController extends BaseController{
         getDataStore().save(assoc);
 
         ObjectNode result = Json.newObject();
-        //result.put("merchant", assoc.toJson());
-        return ok("");
+        result.put("agent", assoc.toJson());
+        return ok(result);
     }
 }

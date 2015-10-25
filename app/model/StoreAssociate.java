@@ -78,6 +78,9 @@ public class StoreAssociate {
 		this.level = level;
 	}
 	
+	public StoreAssociate() {
+		super();
+	}
 	public void queueUser(User user){
         this.queuedUsers.add(user);
     }
