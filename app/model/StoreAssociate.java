@@ -9,6 +9,9 @@ import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.geo.Point;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 @Entity("StoreAssociates")
@@ -79,5 +82,19 @@ public class StoreAssociate {
 	public void queueUser(User user){
         this.queuedUsers.add(user);
     }
-
+    
+    public JsonNode toJson(){
+       ObjectNode result = Json.newObject();
+       result.put("id", getId().toString());
+       result.put("name", getName());
+       ArrayNode userArr = new ArrayNode(JsonNodeFactory.instance);
+		for(User user : getQueuedUsers()){
+			userArr.add(user.toJsonForAgent());
+		}
+	   result.put("users", userArr);
+       result.put("locLat", getCurrentLocation().getLatitude());
+       result.put("locLon", getCurrentLocation().getLongitude());
+       result.put("level", getLevel());
+       return result;
+   }
 }
