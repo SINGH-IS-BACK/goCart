@@ -42,7 +42,7 @@ public class StoreAssociate {
 	}
 
 	public double[] getCurrentLocation() {
-		return currentLocation;
+		return currentLocation != null ? currentLocation : new double[2];
 	}
 
 	public void setCurrentLocation(double[] currentLocation) {
@@ -50,7 +50,7 @@ public class StoreAssociate {
 	}
 
 	public List<User> getQueuedUsers() {
-		return queuedUsers;
+		return queuedUsers != null ? queuedUsers : new ArrayList<User>();
 	}
 
 	public void setQueuedUsers(List<User> queuedUsers) {
