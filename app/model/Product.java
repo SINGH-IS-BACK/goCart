@@ -5,36 +5,40 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
+import org.mongodb.morphia.annotations.Indexed;
 import org.mongodb.morphia.geo.Point;
+import org.mongodb.morphia.utils.IndexDirection;
 import play.libs.Json;
 
 @Entity("Products")
 public class Product {
 
-	@Id
+    @Id
     private ObjectId id;
-	
-	private String name;
-	private String brand;
-	private String type;
-	private String sku;
-	private long price;
-	private Point location;
-	private String imageUrl;
+
+    private String name;
+    private String brand;
+    private String type;
+    private String sku;
+    private long price;
+    private String imageUrl;
+
+    @Indexed(IndexDirection.GEO2D)
+    private double[] location;
 
     public Product(){
 
     }
 
-	public Product(String name, String brand, String type, String sku, long price, Point location) {
-		super();
-		this.name = name;
-		this.brand = brand;
-		this.type = type;
-		this.sku = sku;
-		this.price = price;
-		this.location = location;
-	}
+    public Product(String name, String brand, String type, String sku, long price, double[] location) {
+        super();
+        this.name = name;
+        this.brand = brand;
+        this.type = type;
+        this.sku = sku;
+        this.price = price;
+        this.location = location;
+    }
 
     public JsonNode toJson(){
         ObjectNode result = Json.newObject();
@@ -43,8 +47,8 @@ public class Product {
         result.put("type", getType());
         result.put("sku", getSku());
         result.put("price", getPrice());
-        result.put("locLat", getLocation().getLatitude());
-        result.put("locLon", getLocation().getLongitude());
+        result.put("x", getLocation()[0]);
+        result.put("y", getLocation()[1]);
         return result;
     }
 
@@ -96,11 +100,11 @@ public class Product {
         this.price = price;
     }
 
-    public Point getLocation() {
+    public double[] getLocation() {
         return location;
     }
 
-    public void setLocation(Point location) {
+    public void setLocation(double[] location) {
         this.location = location;
     }
 
