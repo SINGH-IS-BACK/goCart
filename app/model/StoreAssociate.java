@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.bson.types.ObjectId;
@@ -18,14 +19,42 @@ public class StoreAssociate {
 	private List<User> queuedUsers;
 	private int level;
 	
-	public StoreAssociate(String name, Point currentLocation, List<User> queuedUsers, int level) {
+	public StoreAssociate(String name, int level) {
 		super();
 		this.name = name;
-		this.currentLocation = currentLocation;
-		this.queuedUsers = queuedUsers;
+		this.queuedUsers = new ArrayList<>();
 		this.level = level;
 	}
 	
-	
-	
+	public void queueUser(User user){
+        this.queuedUsers.add(user);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Point getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public void setCurrentLocation(Point currentLocation) {
+        this.currentLocation = currentLocation;
+    }
+
+    public List<User> getQueuedUsers() {
+        return queuedUsers;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
 }

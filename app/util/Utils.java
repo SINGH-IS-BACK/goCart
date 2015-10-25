@@ -53,6 +53,14 @@ public class Utils {
 			return 0;
 		}
 	}
+
+    public static int safeIntFromJson(JsonNode node, String key, int defaultValue) {
+        try {
+            return node.get(key).asInt();
+        } catch (Exception e) {
+            return defaultValue;
+        }
+    }
 	
 	public static Double safeDoubleFromJson(JsonNode node, String key) {
 		try {

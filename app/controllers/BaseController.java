@@ -45,7 +45,7 @@ public class BaseController extends Controller {
 		return ok(result);
 	}
     
-    public static Datastore getMorphia(){
+    public static Datastore getDataStore(){
     	
 		try {
 			final Morphia morphia = new Morphia();
