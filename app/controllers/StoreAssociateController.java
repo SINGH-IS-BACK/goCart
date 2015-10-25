@@ -50,9 +50,7 @@ public class StoreAssociateController extends BaseController{
 	    Datastore datastore = getDataStore();
         User user = datastore.get(User.class, new ObjectId(userId));
         Cart currentCart = user.getCurrentCart();
-        List<Cart> purchaseHistory = user.getPurchaseHistory();
-        purchaseHistory.add(currentCart);
-        user.setPurchaseHistory(purchaseHistory);
+        user.addToPurchaseHistory(currentCart);
         user.setCurrentCart(new Cart());
         datastore.save(user);
 	   

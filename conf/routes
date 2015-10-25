@@ -6,10 +6,11 @@
 GET         /                            controllers.Application.index()
 
 #User
-GET	    /user:userId			    controllers.UserController.getUser(userId: String)
-POST	/addCart					controllers.UserController.addCart()
-POST	/user/updateLocation		controllers.UserController.updateLocation()
-POST    /pay                        controllers.UserController.pay()
+POST        /user                        controllers.UserController.addUser()
+GET         /user/:userId                controllers.UserController.getUser(userId: String)
+POST        /addCart                     controllers.UserController.addCart()
+POST        /user/:userId                controllers.UserController.updateLocation(userId: String)
+POST        /pay                         controllers.UserController.pay()
 
 #Agent
 GET         /agent/:agentId               controllers.StoreAssociateController.getAgent(agentId: String)
@@ -19,8 +20,8 @@ POST        /agent/updateLocation        controllers.StoreAssociateController.up
 #Product
 POST        /product                     controllers.ProductController.addProduct()
 POST        /product/:productId          controllers.ProductController.updateProductLocation(productId: String)
-#GET        /product                     controllers.ProductController.getAllProducts()
-#GET        /product/:xCord/:yCord       controllers.ProductController.getProductsAtLocation(xCord: Long, yCord: Long)
+GET         /product                     controllers.ProductController.getAllProducts()
+GET         /product/:xCord/:yCord       controllers.ProductController.getProductsAtLocation(xCord: Long, yCord: Long)
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file                controllers.Assets.at(path="/public", file)
