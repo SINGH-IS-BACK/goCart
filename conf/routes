@@ -8,13 +8,13 @@ GET         /                            controllers.Application.index()
 #User
 POST        /user                        controllers.UserController.addUser()
 GET         /user/:userId                controllers.UserController.getUser(userId: String)
-POST        /addCart                     controllers.UserController.addCart()
+POST        /user/:userId/cart           controllers.UserController.addCart(userId: String)
 POST        /user/:userId                controllers.UserController.updateLocation(userId: String)
-POST        /pay                         controllers.UserController.pay()
+POST        /user/:userId/pay            controllers.UserController.pay(userId: String)
 
 #Agent
-GET         /agent/:agentId               controllers.StoreAssociateController.getAgent(agentId: String)
-POST	    /verifylist				    controllers.StoreAssociateController.verifyList()
+GET         /agent/:agentId              controllers.StoreAssociateController.getAgent(agentId: String)
+POST	    /verifylist				     controllers.StoreAssociateController.verifyList()
 POST        /agent/updateLocation        controllers.StoreAssociateController.updateLocation()
 
 #Product

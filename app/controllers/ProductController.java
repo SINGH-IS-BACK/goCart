@@ -56,6 +56,9 @@ public class ProductController extends BaseController{
         double[] productLocation = new double[]{ x, y};
 
         Product product = datastore.get(Product.class, new ObjectId(productId));
+        if(product == null){
+            return generateBadRequest("Product not found");
+        }
         product.setLocation(productLocation);
         datastore.save(product);
 

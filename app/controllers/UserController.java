@@ -55,7 +55,7 @@ public class UserController extends BaseController {
         return ok(result);
     }
 
-    public static Result addCart() {
+    public static Result addCart(String userId) {
 
         if (!Utils.checkJsonInput(request())) {
             Logger.info("Register User. Bad request data for register user " + request().body());
@@ -64,8 +64,10 @@ public class UserController extends BaseController {
 
         Datastore datastore = getDataStore();
         JsonNode jsonReq = request().body().asJson();
-        String userId = Utils.safeStringFromJson(jsonReq, "userId");
         User user = datastore.get(User.class, new ObjectId(userId));
+        if(user == null){
+            return generateBadRequest("User not found");
+        }
 
         user.setCurrentCart(new Cart());
         for (JsonNode productItem : jsonReq.withArray("products")) {
@@ -88,6 +90,9 @@ public class UserController extends BaseController {
         long x = Utils.safeLongFromJson(jsonReq, "x");
         long y = Utils.safeLongFromJson(jsonReq, "y");
         User user = datastore.get(User.class, new ObjectId(userId));
+        if(user == null){
+            return generateBadRequest("User not found");
+        }
         user.setCurrentLocation(new double[]{x, y});
         datastore.save(user);
 
@@ -96,13 +101,12 @@ public class UserController extends BaseController {
         return ok(result);
     }
 
-    public static Result pay() {
+    public static Result pay(String userId) {
         if (!Utils.checkJsonInput(request())) {
             Logger.info("Register User. Bad request data for add pay " + request().body());
             return generateBadRequest("Bad input json" + request().body());
         }
         JsonNode jsonReq = request().body().asJson();
-        String userId = jsonReq.get("userId").asText();
         String token = jsonReq.get("token").asText();
 
         User user = getDataStore().get(User.class, new ObjectId(userId));
