@@ -1,15 +1,12 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import model.Product;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.geo.Point;
-import org.mongodb.morphia.geo.PointBuilder;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.UpdateOperations;
-import org.mongodb.morphia.query.UpdateResults;
 import play.Logger;
 import play.libs.Json;
 import play.mvc.Result;
@@ -35,9 +32,9 @@ public class ProductController extends BaseController{
         String type = Utils.safeStringFromJson(jsonReq, "type");
         String sku = Utils.safeStringFromJson(jsonReq, "sku");
         long price = Utils.safeLongFromJson(jsonReq, "price");
-        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
-        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
-        Point productLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+        long x = Utils.safeLongFromJson(jsonReq, "x");
+        long y = Utils.safeLongFromJson(jsonReq, "y");
+        double[] productLocation = new double[]{ x, y};
 
         Product product = new Product(name, brand, type, sku, price, productLocation);
         getDataStore().save(product);
@@ -55,9 +52,9 @@ public class ProductController extends BaseController{
 
         Datastore datastore = getDataStore();
         JsonNode jsonReq = request().body().asJson();
-        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
-        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
-        Point productLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+        long x = Utils.safeLongFromJson(jsonReq, "x");
+        long y = Utils.safeLongFromJson(jsonReq, "y");
+        double[] productLocation = new double[]{ x, y};
 
         Product product = datastore.get(Product.class, new ObjectId(productId));
         product.setLocation(productLocation);
@@ -68,4 +65,26 @@ public class ProductController extends BaseController{
         return ok(result);
     }
 
+    public static Result getAllProducts(){
+        List<Product> products = getDataStore().find(Product.class).asList();
+
+        ObjectNode result = Json.newObject();
+        ArrayNode resultArr = new ArrayNode(JsonNodeFactory.instance);
+        for(Product product: products){
+            resultArr.add(product.toJson());
+        }
+        result.put("products", resultArr);
+        return ok(result);
+    }
+
+    public static Result getProductsAtLocation(long xCord, long yCord){
+        List<Product> products = getDataStore().find(Product.class).field("location").near(xCord, yCord, 5).asList();
+        ObjectNode result = Json.newObject();
+        ArrayNode resultArr = new ArrayNode(JsonNodeFactory.instance);
+        for(Product product: products){
+            resultArr.add(product.toJson());
+        }
+        result.put("products", resultArr);
+        return ok(result);
+    }
 }
