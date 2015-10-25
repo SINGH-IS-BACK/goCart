@@ -5,9 +5,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.simplify.payments.PaymentsApi;
+import com.simplify.payments.PaymentsMap;
+import com.simplify.payments.domain.Invoice;
+import com.simplify.payments.domain.Payment;
+import com.simplify.payments.exception.*;
 import play.Logger;
 import play.libs.Json;
 import play.mvc.Result;
+import util.Config;
 import util.Utils;
 import model.User;
 import model.Cart;
@@ -37,8 +43,9 @@ public class UserController extends BaseController{
         
         JsonNode jsonReq = request().body().asJson();
         String name = Utils.safeStringFromJson(jsonReq, "name");
+        String email = Utils.safeStringFromJson(jsonReq, "email");
         int zip = Utils.safeIntFromJson(jsonReq, "zip", 0);
-        long purchasingPower = Utils.safeLongFromJson(jsonReq, "pirchasingPower");
+        long purchasingPower = Utils.safeLongFromJson(jsonReq, "purchasingPower");
         long latitude = Utils.safeLongFromJson(jsonReq, "lat");
         long longitude = Utils.safeLongFromJson(jsonReq, "lon");
         Point currentLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
@@ -47,7 +54,7 @@ public class UserController extends BaseController{
         String segment = Utils.safeStringFromJson(jsonReq, "segment");
         List<Cart> purchaseHistory = new ArrayList<Cart>();
         
-        User user = new User(name, zip, purchaseHistory, purchasingPower, currentLocation, status, level, segment);
+        User user = new User(name, email, zip, purchaseHistory, purchasingPower, currentLocation, status, level, segment);
         getDataStore().save(user);
 
         ObjectNode result = Json.newObject();
@@ -92,16 +99,50 @@ public class UserController extends BaseController{
 	
 	public static Result pay(){
 		if(!Utils.checkJsonInput(request())){
-			Logger.info("Register User. Bad request data for register user "+request().body());
+			Logger.info("Register User. Bad request data for add pay "+request().body());
 	    	return generateBadRequest("Bad input json" + request().body());
 		}
 		JsonNode jsonReq = request().body().asJson();
 		String userId = jsonReq.get("userId").asText();
 		String token = jsonReq.get("token").asText();
-		//pay
-		//return agent
-	       
-		return generateOkTrue();
+
+        User user = getDataStore().get(User.class, new ObjectId(userId));
+        if(user == null){
+            return generateBadRequest("Invalid userId");
+        }
+
+        Payment payment;
+        try {
+            PaymentsApi.PUBLIC_KEY = Config.getMastercardPublicKey();
+            PaymentsApi.PRIVATE_KEY = Config.getMastercardPrivateKey();
+            payment = Payment.create(new PaymentsMap()
+                    .set("currency", "USD")
+                    .set("token", token)
+                    .set("amount", user.getCurrentCart().getTotalAmount() * 100)); // In cents
+        } catch (Exception e) {
+            Logger.info("Server error while sending payment to master card");
+            return generateInternalServer("Payment not successful");
+        }
+
+        if ("APPROVED".equals(payment.get("paymentStatus"))) {
+            try {
+                Invoice invoice = Invoice.create(new PaymentsMap()
+                    .set("currency", "USD")
+                    .set("email", user.getEmail())
+                    .set("items[0].amount", 5504L)
+                    .set("items[0].quantity", 1L)
+                    .set("name", user.getName())
+                    .set("note", "Thank you for shopping with GoCart")
+                    .set("suppliedDate", System.currentTimeMillis())
+                );
+
+            } catch (Exception e) {
+                Logger.info("Server error while sending invoice to user");
+
+            }
+        }
+
+        return generateOkTrue();
 	}
 	
 }

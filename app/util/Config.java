@@ -27,6 +27,14 @@ public class Config {
 	public static int getMongoPort() throws Exception{
 		return Integer.parseInt(getConfig(Constants.MONGO_PORT_PROP));
 	}
+
+    public static String getMastercardPrivateKey() throws Exception{
+        return getConfig(Constants.MASTERCARD_PRIVATE_KEY_PROP);
+    }
+
+    public static String getMastercardPublicKey() throws Exception{
+        return getConfig(Constants.MASTERCARD_PUBLIC_KEY_PROP);
+    }
 	
 	public static String getMongoDB() throws Exception{
 		return getConfig(Constants.MONGO_DB_PROP);

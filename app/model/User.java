@@ -17,6 +17,7 @@ public class User {
     private ObjectId id;
 	
 	private String name;
+    private String email;
 	private int zip;
 	private List<Cart> purchaseHistory;
 	private long purchasingPower;
@@ -25,10 +26,15 @@ public class User {
 	private String status;
 	private String level; //0 - VVIP
 	private String segment; //male/ female/ age combination
-	
-	public User(String name, int zip, List<Cart> purchaseHistory, long purchasingPower, Point currentLocation, String status, String level, String segment) {
+
+    public User(){
+
+    }
+
+	public User(String name, String email, int zip, List<Cart> purchaseHistory, long purchasingPower, Point currentLocation, String status, String level, String segment) {
 		super();
 		this.name = name;
+        this.email = email;
 		this.zip = zip;
 		this.purchaseHistory = purchaseHistory;
 		this.purchasingPower = purchasingPower;
@@ -44,12 +50,6 @@ public class User {
 
 	public void setId(ObjectId id) {
 		this.id = id;
-	}
-
-	public User(String name, int zip) {
-		super();
-		this.name = name;
-		this.zip = zip;
 	}
 	
 	public String getName() {
@@ -123,6 +123,18 @@ public class User {
 	public void setSegment(String segment) {
 		this.segment = segment;
 	}
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void addToPurchaseHistory(Cart cart){
+        getPurchaseHistory().add(cart);
+    }
 
 	public JsonNode toJson(){
        ObjectNode result = Json.newObject();
