@@ -18,6 +18,13 @@ public class UserController extends BaseController{
 
 	private static final String ACTIVITIES_TAG = "activities";
 
+	public static Result getUser(String userId){
+		   
+		//user.setMobileNumber(mobileNumber);
+		return generateOkTrue();
+	}
+
+
 	public static Result addList(){
 		if(!Utils.checkJsonInput(request())){
 			Logger.info("Register User. Bad request data for register user "+request().body());
