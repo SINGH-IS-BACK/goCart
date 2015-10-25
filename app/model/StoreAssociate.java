@@ -7,22 +7,25 @@ import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 import org.mongodb.morphia.geo.Point;
 
-@Entity("Users")
-public class User {
-
+@Entity("StoreAssociates")
+public class StoreAssociate {
+	
 	@Id
     private ObjectId id;
 	
 	private String name;
-	private int zip;
-	private List<Cart> purchaseHistory;
-	private long purchasingPower;
 	private Point currentLocation;
-	private Cart currentCart;
+	private List<User> queuedUsers;
+	private int level;
 	
-	public User(String name, int zip) {
+	public StoreAssociate(String name, Point currentLocation, List<User> queuedUsers, int level) {
 		super();
 		this.name = name;
-		this.zip = zip;
+		this.currentLocation = currentLocation;
+		this.queuedUsers = queuedUsers;
+		this.level = level;
 	}
+	
+	
+	
 }
