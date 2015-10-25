@@ -11,8 +11,6 @@ import model.Product;
 import model.User;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.geo.Point;
-import org.mongodb.morphia.geo.PointBuilder;
 import play.Logger;
 import play.libs.Json;
 import play.mvc.Result;
@@ -32,14 +30,13 @@ public class UserController extends BaseController {
         String email = Utils.safeStringFromJson(jsonReq, "email");
         int zip = Utils.safeIntFromJson(jsonReq, "zip", 0);
         long purchasingPower = Utils.safeLongFromJson(jsonReq, "purchasingPower");
-        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
-        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
-        Point currentLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
+        long x = Utils.safeLongFromJson(jsonReq, "x");
+        long y = Utils.safeLongFromJson(jsonReq, "y");
         String status = "new";
         String level = "normal";
         String segment = "normal";
 
-        User user = new User(name, email, zip, purchasingPower, currentLocation, status, level, segment);
+        User user = new User(name, email, zip, purchasingPower, new double[]{x, y}, status, level, segment);
         getDataStore().save(user);
 
         ObjectNode result = Json.newObject();
@@ -50,7 +47,7 @@ public class UserController extends BaseController {
     public static Result getUser(String userId) {
         Datastore datastore = getDataStore();
         User user = datastore.get(User.class, new ObjectId(userId));
-        if(user == null){
+        if (user == null) {
             return generateBadRequest("User not found");
         }
         ObjectNode result = Json.newObject();
@@ -81,20 +78,17 @@ public class UserController extends BaseController {
         return generateOkTrue();
     }
 
-    public static Result updateLocation() {
+    public static Result updateLocation(String userId) {
         if (!Utils.checkJsonInput(request())) {
             Logger.info("Register User. Bad request data for register user " + request().body());
             return generateBadRequest("Bad input json" + request().body());
         }
         JsonNode jsonReq = request().body().asJson();
         Datastore datastore = getDataStore();
-        String userId = Utils.safeStringFromJson(jsonReq, "userId");
-        long latitude = Utils.safeLongFromJson(jsonReq, "lat");
-        long longitude = Utils.safeLongFromJson(jsonReq, "lon");
-        Point userLocation = new PointBuilder().latitude(latitude).longitude(longitude).build();
-
+        long x = Utils.safeLongFromJson(jsonReq, "x");
+        long y = Utils.safeLongFromJson(jsonReq, "y");
         User user = datastore.get(User.class, new ObjectId(userId));
-        user.setCurrentLocation(userLocation);
+        user.setCurrentLocation(new double[]{x, y});
         datastore.save(user);
 
         ObjectNode result = Json.newObject();

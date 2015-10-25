@@ -7,9 +7,9 @@ GET         /                            controllers.Application.index()
 
 #User
 POST        /user                        controllers.UserController.addUser()
-GET         /user/:userId                 controllers.UserController.getUser(userId: String)
+GET         /user/:userId                controllers.UserController.getUser(userId: String)
 POST        /addCart                     controllers.UserController.addCart()
-POST        /user/updateLocation         controllers.UserController.updateLocation()
+POST        /user/:userId                controllers.UserController.updateLocation(userId: String)
 POST        /pay                         controllers.UserController.pay()
 
 #Agent

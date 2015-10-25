@@ -24,7 +24,7 @@ public class User {
     private int zip;
     private List<Cart> purchaseHistory;
     private long purchasingPower;
-    private Point currentLocation;
+    private double[] currentLocation;
     private Cart currentCart;
     private String status;
     private String level; //0 - VVIP
@@ -34,7 +34,7 @@ public class User {
 
     }
 
-    public User(String name, String email, int zip, long purchasingPower, Point currentLocation, String status, String level, String segment) {
+    public User(String name, String email, int zip, long purchasingPower, double[] currentLocation, String status, String level, String segment) {
         super();
         this.name = name;
         this.email = email;
@@ -45,7 +45,6 @@ public class User {
         this.status = status;
         this.level = level;
         this.segment = segment;
-
     }
 
     public ObjectId getId() {
@@ -84,11 +83,11 @@ public class User {
         this.purchasingPower = purchasingPower;
     }
 
-    public Point getCurrentLocation() {
+    public double[] getCurrentLocation() {
         return currentLocation;
     }
 
-    public void setCurrentLocation(Point currentLocation) {
+    public void setCurrentLocation(double[] currentLocation) {
         this.currentLocation = currentLocation;
     }
 
@@ -141,8 +140,8 @@ public class User {
         result.put("id", getId().toString());
         result.put("name", getName());
         result.put("zip", getZip());
-        result.put("locLat", getCurrentLocation().getLatitude());
-        result.put("locLon", getCurrentLocation().getLongitude());
+        result.put("x", getCurrentLocation()[0]);
+        result.put("y", getCurrentLocation()[1]);
         result.put("status", getStatus());
         result.put("level", getLevel());
         result.put("segment", getSegment());
@@ -161,8 +160,8 @@ public class User {
         }
 
         result.put("purchaseHistory", cartArr);
-        result.put("locLat", getCurrentLocation().getLatitude());
-        result.put("locLon", getCurrentLocation().getLongitude());
+        result.put("x", getCurrentLocation()[0]);
+        result.put("y", getCurrentLocation()[1]);
         result.put("status", getStatus());
         result.put("level", getLevel());
         result.put("segment", getSegment());
